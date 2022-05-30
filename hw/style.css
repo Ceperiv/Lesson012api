@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+a:hover {
+    color: sienna;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Anek Gujarati', sans-serif;
+    /*padding: 0 10px;*/
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+h1 {
+    letter-spacing: 5px;
+    color: teal;
+    margin-top: 10px;
+    margin-bottom: .5em;
+}
+
+.toggle{
+visibility: hidden;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post, .comment{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+   padding: 0 5px;
+    margin-bottom: 15px;
+    min-height: 300px;
+    border-left: lightslategrey solid 1px;
+
+}
+.comment{
+    width: 33%;
+}
+h2{
+    color: #19707e;
+
+}
+h3{
+    color: #a98d1a;
+    text-align: center;
+
+}
+
+h4{
+    color: #460f0f;
+    text-align: center;
+}
+p{
+    color: gray;
+    text-align: justify;
+
+
+}
+@media (max-width: 1024px) {
+    .post, .comment{
+        width: 50%;
+        min-height: 200px;
+    }
+
+}
+@media (max-width: 767px) {
+    .post, .comment{
+        width: 100%;
+        min-height: 100px;
+    }
+}
